@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card ">
+
+                        <div class="card-image mb-2">
+                            <figure class="image is-2by2">
+                                <img src="https://www.pingpongperfect.com/wp-content/uploads/2016/12/pexels-photo-976873.jpeg">
+                            </figure>
+                        </div>
+
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Score Keeper
+                            </p>
+                        </header>
+
+                        <div class="card-content">
+                            <div class="content">
+
+                                <h1 class="title is-1">
+                                    <span id="p1Display"> 0 </span>
+                                    to
+                                    <span id="p2Display"> 0 </span>
+                                </h1>
+
+                                <p class="subtitle">Use the buttons below to keep score</p>
+
+                                <div>
+
+                                    <label for="winningScore" class="label is-large is-inline">Playing To </label>
+
+                                    <div class="select is-rounded">
+                                        <select name="winningScore" id="limit">
+                                            <option value="5"> 5 </option>
+                                            <option value="7"> 7 </option>
+                                            <option value="9"> 9 </option>
+                                            <option value="11"> 11 </option>
+                                            <option value="13"> 13 </option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="field is-grouped">
+                            <button class="button is-info is-rounded" id="p1Button">+1 Player One</button>
+                            <button class="button is-danger is-rounded" id="reset">Reset</button>
+                            <button class="button is-info is-rounded" id="p2Button">+1 Player Two</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
